@@ -944,9 +944,9 @@ frappe.ui.form.on('Sales Invoice', {
 
 	refresh: function(frm) {
 		if (frm.doc.docstatus===0 && !frm.doc.is_return) {
-			frm.add_custom_button(__("Fetch Timesheet"), function() {
+			frm.add_custom_button(__("Fetch TimesheetSanad"), function() {
 				let d = new frappe.ui.Dialog({
-					title: __("Fetch Timesheet"),
+					title: __("Fetch TimesheetSanad"),
 					fields: [
 						{
 							"label" : __("From"),
